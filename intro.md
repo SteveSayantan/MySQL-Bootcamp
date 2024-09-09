@@ -82,3 +82,5 @@ SQL keywords, table/column names are NOT case sensitive. Semicolon is the standa
 
   - For any other detail, checkout [this](https://dev.mysql.com/doc/refman/8.3/en/date-and-time-types.html)
 
+  - For date calculations, checkout [this](https://dev.mysql.com/doc/refman/8.4/en/date-and-time-functions.html#function_date-add) and [this](https://dev.mysql.com/doc/refman/8.4/en/date-calculations.html)
+

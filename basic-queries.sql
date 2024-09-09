@@ -9,7 +9,7 @@ SELECT DISTINCT country from customers; -- SELECT DISTINCT selects only the DIST
 
 SELECT COUNT(DISTINCT Country) FROM Customers; -- it counts and returns the number of different (distinct) countries in the "Customers" table
 
--- WHERE CLAUSE ( Used to filter records )
+-- WHERE CLAUSE ( Used to filter records. Ignores NULL values and does not include them in the result )
 ----------------
 
 SELECT * FROM Customers WHERE Country = 'Mexico';   --selects all the customers from "Mexico" . Since, Mexico is a text value, it is enclosed in quotes
