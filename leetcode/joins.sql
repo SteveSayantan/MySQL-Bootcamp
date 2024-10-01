@@ -38,5 +38,25 @@ GROUP BY A.student_id,B.subject_name ORDER BY A.student_id,B.subject_name;
 -- https://leetcode.com/problems/managers-with-at-least-5-direct-reports/description/?envType=study-plan-v2&envId=top-sql-50
 
 SELECT B.name FROM Employee A INNER JOIN Employee B 
-ON A.managerId=B.id
+ON A.managerId=B.id  
 GROUP BY A.managerId HAVING COUNT(A.id)>=5;
+
+-- @block
+
+-- Confirmation Rate
+-- https://leetcode.com/problems/confirmation-rate/description/?envType=study-plan-v2&envId=top-sql-50
+
+SELECT A.user_id, ROUND(IFNULL(AVG(action='confirmed'),0),2) AS confirmation_rate 
+FROM Signups A LEFT JOIN Confirmations B ON A.user_id = B.user_id
+GROUP BY A.user_id; 
+
+/* 
+    Breakdown of ROUND(IFNULL(AVG(action='confirmed'),0),2):
+
+     -  First we take average of the 'confirmed' actions (wrt the total actions) in a group, using AVG aggregate function.
+
+     -  For some signups, there are no actions, in that case, AVG function will give NULL. We handle that using IFNULL in-built function. 
+    
+     - Finally, we round the value to two decimal places.
+ */
+
