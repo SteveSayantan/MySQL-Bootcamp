@@ -1,5 +1,5 @@
 ### Database Management Systems
-A special software program that helps users create and maintain a database. Basically, it makes handling databases a breeze.
+A special software program that helps users create and maintain databases. Basically, it makes handling databases a breeze.
 
 - Makes it easy to manage large amounts of information.
 - Handles security
@@ -8,13 +8,13 @@ A special software program that helps users create and maintain a database. Basi
 - Concurrency
 - Interacts with software applications
 
-A RDBMS helps users create and maintain a relational databases, e.g. mySQL, Oracle, PostgreSQL, mariaDB etc.
+A RDBMS helps users create and maintain relational databases, e.g. mySQL, Oracle, PostgreSQL, mariaDB etc.
 
 - SQL is a standardized language for interacting with RDBMS. It is used to create and manage databases, define tables and structures, perform CRUD operations, as well as other administrative tasks e.g. user management, security, backup etc. **However, the implementation of SQL varies among different RDBMS. Most of the RDBMS have their own proprietary extensions in addition to the SQL standard.** 
 
 
-A Non-Relational Database Management System helps users create and maintain a non-relational database, e.g. mongoDB, dynamoDB, firebase etc.
-- In case of non-relatinal databases, there is no standard language. Most of them implement their own language for performing different operations on the database.
+A Non-Relational Database Management System helps users create and maintain non-relational databases, e.g. mongoDB, dynamoDB, firebase etc.
+- In case of non-relational databases, there is no standard language. Most of them implement their own language for performing different operations on the database.
 
 
 ### Types of Databases
