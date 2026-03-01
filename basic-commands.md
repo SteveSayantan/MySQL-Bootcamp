@@ -1,8 +1,10 @@
-After connecting to the mySQL server for the first time, we need to create a database using `CREATE DATABASE database_name` on mySQL Command Line Client . Now, we can use our newly created database to store multiple tables.
+After connecting to the MySQL server for the first time, we need to create a database using `CREATE DATABASE database_name` on MySQL Command Line Client . Now, we can use our newly created database to store multiple tables.
 
-To drop an existing SQL database we use `DROP DATABASE database_name`
+To drop an existing SQL database we use `DROP DATABASE database_name`.
 
-We can also get a list of all the databases currently managed by mySQL using `show databases` on mySQL Command Line Client.
+We can also get a list of all the databases currently managed by mySQL using `show databases` on MySQL Command Line Client.
+
+To use a particular database, execute `USE database_name` on on MySQL Command Line Client.
 
 `--` is used to write single-line comments in SQL.
 `/*...*/` is used to write multi-line comments in SQL.
@@ -77,7 +79,7 @@ or,
 
 The values provided have to maintain the order of the corresponding attributes mentioned in the schema or the query itself. Make sure to separate each set of values with a **comma ,** in case of inserting multiple rows.
 
-We can also enter NULL as a value in both cases. 
+We can also enter `NULL` as a value in both cases. 
 
 
 ### Update data
